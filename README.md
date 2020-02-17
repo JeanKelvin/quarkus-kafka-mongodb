@@ -15,19 +15,7 @@ The application can be started using:
 mvn quarkus:dev
 ```  
 
-Then, open your browser to `http://localhost:8080/prices.html`, and you should see a fluctuating price.
-
-## Anatomy
-
-In addition to the `prices.html` page, the application is composed by 3 components:
-
-* `PriceGenerator` - a bean generating random price. They are sent to a Kafka topic
-* `PriceConverter` - on the consuming side, the `PriceConverter` receives the Kafka message and convert the price.
-The result is sent to an in-memory stream of data
-* `PriceResource`  - the `PriceResource` retrieves the in-memory stream of data in which the converted prices are sent and send these prices to the browser using Server-Sent Events.
-
-The interaction with Kafka is managed by MicroProfile Reactive Messaging.
-The configuration is located in the application configuration.
+Then, open your browser to `http://localhost:8080`.
 
 ## Running in native
 
