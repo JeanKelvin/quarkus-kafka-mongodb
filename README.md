@@ -1,8 +1,6 @@
 Quarkus Kafka Quickstart
 ========================
 
-This project illustrates how you can interact with Apache Kafka using MicroProfile Reactive Messaging.
-
 ## Kafka cluster
 
 First you need a Kafka cluster. You can follow the instructions from the [Apache Kafka web site](https://kafka.apache.org/quickstart) or run `docker-compose up` if you have docker installed on your machine.
